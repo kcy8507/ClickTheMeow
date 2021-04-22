@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel = "icon" href="pointer.png">
+    
+    <title>ClickTheMeow</title>
+      </script>
+  </head>
+  <style>
+    
+    @font-face {
+  font-family:'DungeunMo';
+  src:url('DungGeunMo.woff2') format('woff2');
+  font-style:normal;
+  font-weight:normal;
+}
+    body{
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      background-color: rgb(254, 166, 144);
+      cursor: url(cursor\ \(2\).cur), auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .box {
+      width: 100px;
+      height: 100px;
+      background-image: url("cat.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+
+    .box, #btn {
+      cursor: url(cursor\ \(1\).cur), pointer;
+    }
+
+    h2 {
+      margin-top: 3px;
+      
+      color: rgb(47, 47, 47);
+      font-size: 2rem;
+      text-align: center;
+      font-family: "DungeunMo";
+    }
+
+    #controller {
+      color: white;
+      width: 300px;
+      height: 50px;
+      border-radius: 25px;
+      box-shadow: inset -6px -6px #8c2022;
+      background-color: #e76e55;
+      border: solid 5px rgb(47, 47, 47);
+      padding-top: 20px;
+      line-height: 28px;
+    }
+
+  </style>
+  <body id="body">
+    <h2 id="count">
+      냥이는? 총 0마리
+    </h2>
+    <h2 id="catchCount">내가 잡은 냥이는? 총 0마리</h2>
+    <div id="btn">
+    <h2 id="controller">Start</h2>
+    <h2 id="restBtn">reset</h2>
+  </div>
+  </body>
+  <script type="text/javascript" src="ClickTheMeow.js"></script> 
+</html>
